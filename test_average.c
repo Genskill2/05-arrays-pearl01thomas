@@ -2,7 +2,7 @@
 #include <assert.h>
 
 
-float average(int [], int);
+float average(int arr[], int s);
 
 int main(void) {
   int x[] = {9,5,6,10,2,-3,4};
@@ -12,3 +12,12 @@ int main(void) {
   assert (average(y, 1) == 5.0);
   printf("Average: passed\n");
   }
+
+float average(int arr[], int s)
+ { int sum=0;
+  float avg=1;
+  for(i=0;i<s;i++)
+  { sum+=arr[i]; }
+  avg=sum/s;
+   return avg;
+ }
