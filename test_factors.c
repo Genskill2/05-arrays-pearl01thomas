@@ -2,7 +2,7 @@
 #include <assert.h>
 
 
-int factors(int, int []);
+int factors(int s, int arr[]);
 
 int main(void) {
   int ret[100] = {0};
@@ -21,3 +21,19 @@ int main(void) {
   assert (ret[1] == 13);
   printf("Factors: passed\n");
 }
+
+int factors(int s ,int arr[])
+{   int x=0;
+    for( int i=2;i<=s:i++)
+    {
+       while(s%i==0)
+       {  arr[x]=i;
+         x++;
+        n/=i;
+       }
+      
+    }
+ 
+ return x;
+}
+ 
